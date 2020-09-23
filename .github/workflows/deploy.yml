@@ -37,7 +37,7 @@ jobs:
       - name: Run e2e cypress test
         uses: actions/checkout@v1
         with:
-          start: npm run start:test
+          start: npm run start
           browser: chrome
 
       # TODO: Add a stage to generate cypress videos and screenshots as artifacts
