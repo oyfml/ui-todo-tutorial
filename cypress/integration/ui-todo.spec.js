@@ -10,6 +10,7 @@ describe("CRUD flow - ui-todo", () => {
   });
 
   it("should be able to add todo", () => {
+    cy.get("[data-cy=todo-task__button-delete").click({multiple : true});
     cy.get("[data-cy=todo-input__input]").type("Buy Groceries");
     cy.get("[data-cy=todo-input__button").click();
     cy.get("[data-cy=todo-input__input]").type("Write TODO app");
