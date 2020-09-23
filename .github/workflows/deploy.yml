@@ -35,7 +35,6 @@ jobs:
         run: npm run test
       # TODO: Add a stage for running cypress tests
       - name: Run e2e cypress test
-        uses: actions/checkout@v1
         with:
           start: npm run start
           browser: chrome
